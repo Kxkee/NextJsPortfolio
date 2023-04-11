@@ -12,7 +12,7 @@ module.exports = {
       'primary-light-purple': '#F1E8F8',
       'secondary-light-purple': "#CBC1D3",
       'third-light-purple': "#938F96",
-    }
+    },
   },
   plugins: [],
 }
