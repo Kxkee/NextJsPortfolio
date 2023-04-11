@@ -3,3 +3,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.mono {
+    font-family: "JetBrains Mono";
+}
+
+.name {
+    font-family: "Manrope";
+}
+
+.text {
+    font-family: "Manrope";
+    font-weight: normal;
+}
+

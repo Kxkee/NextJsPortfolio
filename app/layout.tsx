@@ -12,7 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="text-[#C3C2C5]">{children}</body>
     </html>
   )
 }
