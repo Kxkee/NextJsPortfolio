@@ -2,16 +2,16 @@ import {RxTriangleRight} from 'react-icons/rx';
 export default function AboutMe() {
     const skills: string[] = ['TypeScript', 'React', 'Next.JS 13', 'Node.js','Prisma', 'PostgreSQL'];
     return (
-        <section className="h-[900px] flex justify-center x-[10px] md:mx-[100px] lg:mx-[200px]">
-            <div className="w-[calc(100%-150px)]">
+        <section className="min-h-[700px] md:w-[800px] flex justify-center x-[10px] md:mx-[100px] lg:mx-[200px]">
+            <div className="w-full">
                 <div className="h-[200px] flex items-end pb-10">
                     <h2 className="name font-bold section-title text-third-light-purple-light-purple">
                         <span className="mono number-title font-extralight text-elem-purple">01. </span>
                         About Me
                     </h2>
                 </div>
-                <div className="h-[calc(100%-200px] flex">
-                    <div className='w-1/2 space-y-7 text-1xl text-third-light-purple'>
+                <div className="h-[calc(100%-200px]">
+                    <div className='w-full space-y-7 text-1xl text-third-light-purple'>
                         <p className="text">Hello! My name is Tom and I have been interested in web development and
                             technology since I was a child, thanks to my love for video games.</p>
 
@@ -27,13 +27,12 @@ export default function AboutMe() {
                         <p>Here are a few technologies I’ve been working with recently:</p>
                         <ul className="skills">
                             {skills.map((skill) => (
-                                <li key={skill} className="flex items-center gap-2">
+                                <li key={skill} className="flex items-center gap-2 mono font-extralight text-[13px]">
                                     <span><RxTriangleRight size={20} className="text-elem-purple" /></span>
                                     {skill}</li>
                             ))}
                         </ul>
                     </div>
-                    <div className="w-1/2"></div>
                 </div>
             </div>
         </section>

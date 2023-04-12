@@ -2,7 +2,7 @@ import { slide as Menu } from 'react-burger-menu'
 
 export default function Navigation() {
     return (
-        <div className="h-[90px] w-full flex justify-between px-5 bg-bg-purple z-10 lg:px-10 mono font-extralight fixed">
+        <div className="h-[90px] w-full flex justify-between px-5 bg-bg-purple z-50 lg:px-10 mono font-extralight fixed">
             <div className="flex justify-start items-center w-[150px]">
                 <p>Tom Cousin</p>
             </div>

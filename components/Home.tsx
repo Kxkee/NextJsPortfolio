@@ -2,8 +2,8 @@ import stripes from '@/public/stripes.svg';
 import Image from "next/image";
 export default function Home(){
     return (
-        <div className="w-full h-full flex flex-col justify-center items-start gap-3 pb-[50px]">
-            <p className="mono text-elem-purple pb-3">Hi, my name is</p>
+        <div className="md:w-[900px] h-full flex flex-col justify-center items-start gap-3 pb-[50px]">
+            <p className="mono text-elem-purple pb-3 font-extralight">Hi, my name is</p>
             <h1 className="ptitle name font-bold text-primary-light-purple opacity-[90%]">Tom Cousin.</h1>
             <h2 className="stitle name font-bold text-secondary-light-purple opacity-[80%]">Fullstack <span className="text-elem-purple">JS</span> Developer.</h2>
             <p className="text-third-light-purple max-w-[600px] mt-5">I’m a web developer specializing in building (and occasionally designing) web application.
