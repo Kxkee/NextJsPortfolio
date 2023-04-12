@@ -26,3 +26,19 @@
     line-height: 1;
 }
 
+.number-title {
+    font-size: clamp(16px,3vw,20px);
+}
+
+.section-title {
+    font-size: clamp(26px,5vw,32px);
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    padding: 0px;
+    margin: 20px 0px 0px;
+    gap: 5px 10px;
+}
+

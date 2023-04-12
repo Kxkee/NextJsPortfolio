@@ -23,14 +23,6 @@ export default function Home(){
                             mono
                             font-extralight
                             ">Check out my bio !</button>
-            <Image
-                priority
-                src={stripes}
-                height={350}
-                width={350}
-                alt="stripes"
-                className="absolute right-0 bottom-0 collapse md:visible"
-            />
         </div>
     )
 }
