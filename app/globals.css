@@ -46,3 +46,6 @@
     font-size: clamp(26px,5vw,32px);
 }
 
+.project-desc {
+    font-size: clamp(10px,3vw,18px);
+}
