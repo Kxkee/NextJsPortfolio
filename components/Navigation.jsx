@@ -5,7 +5,7 @@ import {flag} from "arg";
 
 export default function Navigation() {
 
-    const [menuState, setMenuState] = useState<boolean>(false);
+    const [menuState, setMenuState] = useState(false);
 
     useEffect(() => {
         let url = window.location.href.split("/");
@@ -14,8 +14,8 @@ export default function Navigation() {
         element && element.scrollIntoView({ behavior: "smooth", block: "start" });
     }, []);
 
-    const isMenuOpen = () => {
-        return menuState;
+    const handleMenu = () => {
+        setMenuState(!menuState);
     }
     return (
         <div className="h-[90px] w-full flex justify-between px-5 bg-bg-purple opacity-[95%] z-50 lg:px-10 mono font-extralight fixed">
@@ -79,7 +79,7 @@ export default function Navigation() {
 
             </div>
             <div className="flex md:hidden">
-                <Menu right width={'200px'} isOpen={menuState}>
+                <Menu right width={'200px'} isOpen={menuState} >
                     <a id="about" href="#About" className="menu-item mono text-[15px] p-2 hover:text-elem-purple duration-200 cursor-pointer" onClick={setMenuState}><span className="text-elem-purple">01.</span>About</a>
                     <a id="experience" href="#Experience" className="menu-item mono text-[15px] p-2 hover:text-elem-purple duration-200 cursor-pointer" onClick={setMenuState}><span className="text-elem-purple">02.</span>Experience</a>
                     <a id="work" href="#Work" className="menu-item mono text-[15px] p-2 hover:text-elem-purple duration-200 cursor-pointer" onClick={setMenuState}><span className="text-elem-purple">03.</span>Work</a>

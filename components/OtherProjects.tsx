@@ -32,7 +32,7 @@ export default function OtherProjects() {
                     </h2>
                 </div>
                 <div className="h-full flex flex-wrap gap-3 justify-center">
-                    <Project title={portfolio.title} description={portfolio.description} stack={portfolio.stack} />
+                    <Project link={portfolio.link} title={portfolio.title} description={portfolio.description} stack={portfolio.stack} />
                     <Project link={quivo.link} title={quivo.title} description={quivo.description} stack={quivo.stack} />
                     <Project link={multisigDapp.link} title={multisigDapp.title} description={multisigDapp.description} stack={multisigDapp.stack} />
                 </div>

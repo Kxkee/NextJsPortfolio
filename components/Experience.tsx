@@ -27,7 +27,7 @@ export default function Experience() {
                 <div className="h-[200px] flex items-end pb-10">
                     <h2 className="name font-bold section-title text-third-light-purple-light-purple">
                         <span className="mono number-title font-extralight text-elem-purple">02. </span>
-                        Where I've worked
+                        Where I&apos;ve worked
                     </h2>
                 </div>
                 <div className="h-[calc(100%-200px]">
@@ -53,7 +53,7 @@ export default function Experience() {
                             {selectedItem === 0 ? (
                                 <div className="w-full h-full">
                                     <div className="h-[70px]">
-                                        <h3 className="name font-medium text-[22px]">Front End Developer <span className="text-elem-purple">@ O'clock</span></h3>
+                                        <h3 className="name font-medium text-[22px]">Front End Developer <span className="text-elem-purple">@ O&apos;clock</span></h3>
                                         <p className="mono text-[13px] font-extralight">February - March 2023</p>
                                     </div>
                                     <div className="h-calc[100%-70px]">

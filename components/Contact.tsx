@@ -74,15 +74,15 @@ export default function Contact() {
                         <div className="w-full md:w-[500px] h-full">
                             <form className="space-y-10 ">
                                 <div className="flex flex-col gap-3">
-                                    <label className="mono text-[18px] font-bold">Full Name</label>
+                                    <label className="mono text-[18px] ">Full Name</label>
                                     <input type="text" value={name} onChange={(e) => setName(e.target.value)} className="bg-bg-light-purple p-4 text-[16px] rounded shadow-lg shadow-black outline-none hover:bg-[#262230] duration-300 focus:bg-[#262230]" />
                                 </div>
                                 <div className="flex flex-col gap-3">
-                                    <label className="mono text-[18px] font-bold">Email</label>
+                                    <label className="mono text-[18px] ">Email</label>
                                     <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} className="bg-bg-light-purple p-4 text-[16px] rounded shadow-lg shadow-black outline-none hover:bg-[#262230] duration-300 focus:bg-[#262230]" />
                                 </div>
                                 <div className="flex flex-col gap-3">
-                                    <label className="mono text-[18px] font-bold">Message</label>
+                                    <label className="mono text-[18px] ">Message</label>
                                     <textarea value={message} onChange={(e) => setMessage(e.target.value)} className="bg-bg-light-purple p-4 text-[16px] rounded shadow-lg shadow-black outline-none resize-none h-[250px] hover:bg-[#262230] duration-300 focus:bg-[#262230]"></textarea>
                                 </div>
                                 <button

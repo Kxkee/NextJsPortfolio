@@ -16,6 +16,7 @@ export default function FeaturedProjectList() {
     }
 
     const coinTastic = {
+        link: "",
         img: cointastic,
         title: "CoinTastic",
         description: "A useful web App to keep tracking cryptoassets price, volume and many other things !",
@@ -28,7 +29,7 @@ export default function FeaturedProjectList() {
                 <div className="h-[200px] flex items-center">
                     <h2 className="name font-bold section-title text-third-light-purple-light-purple">
                         <span className="mono number-title font-extralight text-elem-purple">03. </span>
-                        Some Things I've Built
+                        Some Things I&apos;ve Built
                     </h2>
                 </div>
                 <FeaturedProjectRight
@@ -39,6 +40,7 @@ export default function FeaturedProjectList() {
                     stack={devBoard.stack} />
 
                 <FeaturedProjectLeft
+                    link={coinTastic.link}
                     img={coinTastic.img}
                     title={coinTastic.title}
                     description={coinTastic.description}
