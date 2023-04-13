@@ -1,8 +1,8 @@
 import {RxTriangleRight} from 'react-icons/rx';
 export default function AboutMe() {
-    const skills: string[] = ['TypeScript', 'React', 'Next.JS 13', 'Node.js','Prisma', 'PostgreSQL'];
+    const skills: string[] = ['TypeScript', 'Next.JS 13', 'Solidity','Node.js','Prisma', 'PostgreSQL'];
     return (
-        <section className="min-h-[700px] md:w-[800px] flex justify-center x-[10px] md:mx-[100px] lg:mx-[200px]">
+        <section className="min-h-[700px] md:w-[800px] flex justify-center x-[10px] md:mx-[100px] lg:mx-[200px]" id="About">
             <div className="w-full">
                 <div className="h-[200px] flex items-end pb-10">
                     <h2 className="name font-bold section-title text-third-light-purple-light-purple">

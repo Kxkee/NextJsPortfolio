@@ -22,7 +22,7 @@ export default function Experience() {
     const [selectedItem, setSelectedItem] = useState<number>(0);
 
     return (
-        <section className="min-h-[700px] md:w-[700px] flex justify-center x-[10px] md:mx-[100px] lg:mx-[200px] pb-10">
+        <section className="min-h-[700px] md:w-[700px] flex justify-center x-[10px] md:mx-[100px] lg:mx-[200px] pb-10" id="Experience">
             <div className="w-full">
                 <div className="h-[200px] flex items-end pb-10">
                     <h2 className="name font-bold section-title text-third-light-purple-light-purple">
@@ -42,7 +42,7 @@ export default function Experience() {
                                         aria-selected={selectedItem == idx}
                                         aria-controls={`tabpanel-${idx + 1}`}
                                         className={`p-3 w-full text-start hover:bg-[#262230] duration-200
-                                        ${selectedItem == idx ? "bg-[#262230]" : null}`}
+                                        ${selectedItem == idx ? "bg-[#262230] text-elem-purple" : null}`}
                                         onClick={() => setSelectedItem(idx)}
                                     >
                                         {item}
