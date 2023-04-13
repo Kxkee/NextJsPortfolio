@@ -1,8 +1,9 @@
 import Image from "next/image";
 import devboard from '@/public/devboard.svg';
 import {FiGithub} from 'react-icons/fi';
+import FeaturedProjectSM from "@/components/FeaturedProjectSM";
 
-export default function FeaturedProject() {
+export default function FeaturedProjectList() {
     return (
         <section className="min-h-[700px] w-full md:w-[800px] flex justify-center x-[10px] md:mx-[100px] lg:mx-[200px]">
             <div className="w-full">
@@ -12,7 +13,8 @@ export default function FeaturedProject() {
                         Some Things I've Built
                     </h2>
                 </div>
-                <div className="h-[calc(100%-200px)]">
+                <FeaturedProjectSM />
+                <div className="h-[calc(100%-200px)] hidden md:flex">
                     <div className='w-full space-y-7 text-1xl text-third-light-purple'>
                         <div className="w-full min-h-[450px] relative md:static flex items-center justify-end ">
                             <div className="w-full flex justify-start items-center px-2">
@@ -37,7 +39,7 @@ export default function FeaturedProject() {
                                     <Image src={devboard} alt="devboard" className="rounded w-full h-full opacity-0 sm:opacity-100 duration-500" />
                                 </div>
                             </div>
-                            <div className="relative z-10 hidden md:flex">
+                            <div className="relative z-10">
                                 <div className="flex flex-col justify-center items-end">
                                     <p className="font-extralight mono text-elem-purple text-[13px]">Featured Project</p>
                                     <p className="font-bold featuredProjectTitle text-secondary-light-purple">DevBoard</p>
@@ -57,7 +59,7 @@ export default function FeaturedProject() {
                         </div>
 
                     </div>
-                    </div>
+                </div>
             </div>
         </section>
     )

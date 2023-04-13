@@ -4,7 +4,7 @@ import Navigation from "@/components/Navigation";
 import Home from "@/components/Home";
 import AboutMe from "@/components/AboutMe";
 import Experience from "@/components/Experience";
-import FeaturedProject from "@/components/FeaturedProject";
+import FeaturedProjectList from "@/components/FeaturedProjectList";
 
 export default function Portfolio() {
   return (
@@ -16,7 +16,7 @@ export default function Portfolio() {
         </div>
         <AboutMe />
         <Experience />
-        <FeaturedProject />
+        <FeaturedProjectList />
         <div className="fixed bottom-10 left-10 flex flex-col gap-5">
             <FiGithub size={25} className="text-third-light-purple
              hover:text-elem-purple
