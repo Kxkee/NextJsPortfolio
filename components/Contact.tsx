@@ -13,7 +13,7 @@ export default function Contact() {
         e.preventDefault();
         if(name && email && message) {
             try {
-                const response = await axios.post(`${process.env.NEXT_PIPE_WEBHOOK}`, {
+                const response = await axios.post(`${process.env.NEXT_PUBLIC_PIPE_WEBHOOK}`, {
                     name,
                     email,
                     message,
