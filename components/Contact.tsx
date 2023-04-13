@@ -88,7 +88,7 @@ export default function Contact() {
                                 <button
                                     className="w-full p-5 name text-[18px] font-bold bg-featured-project-hover rounded-lg duration-150 hover:bg-featured-project-SM active:shadow-lg" onClick={handleSubmit}
                                 >
-                                    Button
+                                    Submit
                                 </button>
                             </form>
                         </div>
