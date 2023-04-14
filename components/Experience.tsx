@@ -39,6 +39,7 @@ export default function Experience() {
                                     : "border-b md:border-b-0 md:border-l"}`}>
                                     <button
                                         role="tab"
+                                        aria-label={item}
                                         aria-selected={selectedItem == idx}
                                         aria-controls={`tabpanel-${idx + 1}`}
                                         className={`p-3 w-full text-start hover:bg-[#262230] duration-200

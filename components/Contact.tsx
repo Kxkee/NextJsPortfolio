@@ -77,17 +77,18 @@ export default function Contact() {
                             <form className="space-y-10 ">
                                 <div className="flex flex-col gap-3">
                                     <label className="mono text-[18px] ">Full Name</label>
-                                    <input type="text" value={name} onChange={(e) => setName(e.target.value)} className="bg-bg-light-purple p-4 text-[16px] rounded shadow-lg shadow-black outline-none hover:bg-[#262230] duration-300 focus:bg-[#262230]" />
+                                    <input type="text" aria-label="Name" value={name} onChange={(e) => setName(e.target.value)} className="bg-bg-light-purple p-4 text-[16px] rounded shadow-lg shadow-black outline-none hover:bg-[#262230] duration-300 focus:bg-[#262230]" />
                                 </div>
                                 <div className="flex flex-col gap-3">
                                     <label className="mono text-[18px] ">Email</label>
-                                    <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} className="bg-bg-light-purple p-4 text-[16px] rounded shadow-lg shadow-black outline-none hover:bg-[#262230] duration-300 focus:bg-[#262230]" />
+                                    <input type="text" aria-label="Email" value={email} onChange={(e) => setEmail(e.target.value)} className="bg-bg-light-purple p-4 text-[16px] rounded shadow-lg shadow-black outline-none hover:bg-[#262230] duration-300 focus:bg-[#262230]" />
                                 </div>
                                 <div className="flex flex-col gap-3">
                                     <label className="mono text-[18px] ">Message</label>
-                                    <textarea value={message} onChange={(e) => setMessage(e.target.value)} className="bg-bg-light-purple p-4 text-[16px] rounded shadow-lg shadow-black outline-none resize-none h-[250px] hover:bg-[#262230] duration-300 focus:bg-[#262230]"></textarea>
+                                    <textarea value={message} aria-label="Message" onChange={(e) => setMessage(e.target.value)} className="bg-bg-light-purple p-4 text-[16px] rounded shadow-lg shadow-black outline-none resize-none h-[250px] hover:bg-[#262230] duration-300 focus:bg-[#262230]"></textarea>
                                 </div>
                                 <button
+                                    aria-label="Submit"
                                     className="w-full p-5 name text-[18px] font-bold bg-featured-project-hover rounded-lg duration-150 hover:bg-featured-project-SM active:shadow-lg" onClick={handleSubmit}
                                 >
                                     Submit

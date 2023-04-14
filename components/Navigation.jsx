@@ -25,6 +25,7 @@ export default function Navigation() {
             <div className="flex justify-around items-center w-[600px] hidden md:flex">
                 <ul className="w-full h-[40px] flex justify-around items-center text-[13px]">
                     <Link href="/"
+                          aria-label="About me"
                           onClick={e => {
                               let hero = document.getElementById("About");
                               e.preventDefault();
@@ -34,6 +35,7 @@ export default function Navigation() {
                     <li className="p-2 hover:text-elem-purple duration-200 cursor-pointer"><span className="text-elem-purple">01.</span> About</li>
                     </Link>
                     <Link href="/"
+                          aria-label="Experience"
                           onClick={e => {
                               let hero = document.getElementById("Experience");
                               e.preventDefault();
@@ -43,6 +45,7 @@ export default function Navigation() {
                     <li className="p-2 hover:text-elem-purple duration-200 cursor-pointer"><span className="text-elem-purple">02.</span> Experience</li>
                     </Link>
                     <Link href="/"
+                          aria-label="Work"
                           onClick={e => {
                               let hero = document.getElementById("Work");
                               e.preventDefault();
@@ -52,6 +55,7 @@ export default function Navigation() {
                     <li className="p-2 hover:text-elem-purple duration-200 cursor-pointer"><span className="text-elem-purple">03.</span> Work</li>
                     </Link>
                     <Link href="/"
+                          aria-label="Contact"
                           onClick={e => {
                               let hero = document.getElementById("Contact");
                               e.preventDefault();
@@ -80,10 +84,10 @@ export default function Navigation() {
             </div>
             <div className="flex md:hidden">
                 <Menu right width={'200px'} isOpen={menuState} >
-                    <a id="about" href="#About" className="menu-item mono text-[15px] p-2 hover:text-elem-purple duration-200 cursor-pointer" onClick={setMenuState}><span className="text-elem-purple">01.</span>About</a>
-                    <a id="experience" href="#Experience" className="menu-item mono text-[15px] p-2 hover:text-elem-purple duration-200 cursor-pointer" onClick={setMenuState}><span className="text-elem-purple">02.</span>Experience</a>
-                    <a id="work" href="#Work" className="menu-item mono text-[15px] p-2 hover:text-elem-purple duration-200 cursor-pointer" onClick={setMenuState}><span className="text-elem-purple">03.</span>Work</a>
-                    <a id="contact" href="#Contact" className="menu-item mono text-[15px] p-2 hover:text-elem-purple duration-200 cursor-pointer" onClick={setMenuState}><span className="text-elem-purple">04.</span>Contact</a>
+                    <a id="about" href="#About" className="menu-item mono text-[15px] p-2 hover:text-elem-purple duration-200 cursor-pointer" onClick={setMenuState} aria-label="About me"><span className="text-elem-purple">01.</span>About</a>
+                    <a id="experience" href="#Experience" className="menu-item mono text-[15px] p-2 hover:text-elem-purple duration-200 cursor-pointer" onClick={setMenuState} aria-label="Experience"><span className="text-elem-purple">02.</span>Experience</a>
+                    <a id="work" href="#Work" className="menu-item mono text-[15px] p-2 hover:text-elem-purple duration-200 cursor-pointer" onClick={setMenuState} aria-label="Work"><span className="text-elem-purple">03.</span>Work</a>
+                    <a id="contact" href="#Contact" className="menu-item mono text-[15px] p-2 hover:text-elem-purple duration-200 cursor-pointer" onClick={setMenuState} aria-label="Contact"><span className="text-elem-purple">04.</span>Contact</a>
                 </Menu>
             </div>
 

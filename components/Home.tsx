@@ -27,8 +27,8 @@ export default function Home(){
                             text-elem-purple
                             mt-10
                             mono
-                            font-extralight
-                            ">Check out my bio !</button>
+                            font-extralight"
+                    aria-label="About">Check out my bio !</button>
             </Link>
         </div>
     )
