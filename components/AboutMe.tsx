@@ -15,14 +15,14 @@ export default function AboutMe() {
                         <p className="text">Hello! My name is Tom and I have been interested in web development and
                             technology since I was a child, thanks to my love for video games.</p>
 
-                        <p>I am naturally curious and always eager to learn more. Recently, I created CoinTastic,
+                        <p>I am naturally curious and always eager to learn more. Recently, I created <span className="text-elem-purple">CoinTastic</span>,
                             a web application that allows users to track real-time cryptocurrency prices using NextJS.</p>
 
                         <p>My passion for web development has led me to gain experience in various settings,
                             including working on personal projects as well as professional experiences at different companies,
                             where I have honed my skills in coding and problem-solving.</p>
 
-                        <p>I am currently looking for an Apprenticeship contract !</p>
+                        <p>I am currently looking for an <span className="text-elem-purple">Apprenticeship contract</span>  !</p>
 
                         <p>Here are a few technologies I’ve been working with recently:</p>
                         <ul className="skills">

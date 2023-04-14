@@ -1,6 +1,4 @@
 "use client";
-import {FiGithub, FiLinkedin} from 'react-icons/fi';
-import Link from 'next/link';
 import Navigation from "@/components/Navigation";
 import Home from "@/components/Home";
 import AboutMe from "@/components/AboutMe";
