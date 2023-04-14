@@ -6,7 +6,7 @@ export default function OtherProjects() {
     const projectList = {
         projects:
         [{
-            link: "",
+            link: "https://github.com/Kxkee/NextJsPortfolio",
             title: "Portfolio",
             description: "Here is the portfolio that I made in NextJS",
             stack: ["Next.js", "React", "Tailwind"],
