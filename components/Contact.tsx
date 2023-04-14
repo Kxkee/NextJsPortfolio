@@ -15,7 +15,7 @@ export default function Contact() {
         e.preventDefault();
         if(name && email && message) {
             try {
-                const response = await axios.post(`https://eo3uxmpgx4u9mcd.m.pipedream.net`, {
+                const response = await axios.post(``, {
                     name,
                     email,
                     message,

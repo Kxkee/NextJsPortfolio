@@ -39,7 +39,9 @@ export default function FeaturedProjectLeft({link, img, title, description, stac
                                             <li key={idx}>{tools}</li>
                                         ))}
                                     </ul>
+                                    <Link href={link} target="_blank">
                                     <FiGithub size={25} className="text-third-light-purple hover:text-elem-purple duration-200 cursor-pointer" />
+                                    </Link>
                                 </div>
                             </div>
                         </div>

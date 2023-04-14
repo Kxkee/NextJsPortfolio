@@ -16,7 +16,7 @@ export default function FeaturedProjectList() {
     }
 
     const coinTastic = {
-        link: "",
+        link: "https://github.com/Kxkee/CoinTastic",
         img: cointastic,
         title: "CoinTastic",
         description: "A useful web App to keep tracking cryptoassets price, volume and many other things !",
